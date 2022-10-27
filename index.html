@@ -127,7 +127,7 @@
 					<div class="row">
 						<div class="col-sm-6">
 							<div class="form-group">
-								<label>Grounds Available <span class="required"> *</span><em>(Select from below options)</em></label>
+								<label>Other Available Grounds <span class="required"> *</span><em>(Select from below options)</em></label>
 								<ul>
 									<li ng-model="booking.mealType" ng-repeat="meal in form.meals" ng-click="form.selectMeal(meal);" ng-class="{active:meal.active}" class="mealType">{{meal.name}} - {{meal.description}} <span>{{meal.price | currency}}</span>
 									</li>
