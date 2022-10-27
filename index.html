@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="form">
 <head>
-	<title>AngularJS Booking Form Demo</title>
+	<title>Book And Play</title>
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
 </head>
@@ -19,13 +19,6 @@
 
 			<div class="panel standard_form" ng-show="panel.isSelected(1)">	
 
-				<div ng-hide="message">
-					<h4>Standard Form</h4>
-					<p>Complete and sumbit the form below to make a booking.</p>
-					<p>Use the <b>Custom Form</b> for a more bespke booking.</p>
-					<p><span class="required">*</span> required fields</p>
-					
-				</div>
 				
 				<form name="mealForm" ng-controller="FormController as form" method="post" ng-submit="mealForm.$valid && handleFormSubmit(booking)" novalidate ng-hide="message">
 					<div class="row">
@@ -117,7 +110,7 @@
 						</div>
 						<div class="col-sm-6">
 							<div class="form-group">
-							    <label for="groupSize">Group Size <span class="required"> *</span><em>(max 15)</em></label>
+							    <label for="groupSize">Number of Peoples<span class="required"> *</span><em>(max 15)</em></label>
 								<select ng-model="booking.groupSize" class="form-control" name="groupSize" id="groupSize" required>
 							  		<option value="1">1</option>
 							  		<option value="2">2</option>
@@ -141,7 +134,7 @@
 					<div class="row">
 						<div class="col-sm-6">
 							<div class="form-group">
-								<label>Meal Type <span class="required"> *</span><em>(Select from below options)</em></label>
+								<label>Grounds Available <span class="required"> *</span><em>(Select from below options)</em></label>
 								<ul>
 									<li ng-model="booking.mealType" ng-repeat="meal in form.meals" ng-click="form.selectMeal(meal);" ng-class="{active:meal.active}" class="mealType">{{meal.name}} - {{meal.description}} <span>{{meal.price | currency}}</span>
 									</li>
