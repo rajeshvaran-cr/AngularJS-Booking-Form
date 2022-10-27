@@ -1,20 +1,20 @@
 [
 	{
-		"name": "Breakfast",
-		"price": "20",
-		"description": "Three course breakfast",
+		"name": "SNR Cricket Ground",
+		"price": "Rs.500 per day",
+		"description": "Papanaickenpalayam",
 		"active": true
 	},
 	{
-		"name": "Dinner",
-		"price": "20",
-		"description": "Three course dinner",
+		"name": "Natarajan Cricket Ground",
+		"price": "Rs.7500 per day",
+		"description": "Salem",
 		"active": false
 	},
 	{
-		"name": "Both",
-		"price": "40",
-		"description": "Breakfast and Dinner",
+		"name": "Pushpa Baskeball Ground",
+		"price": "Rs.400 per day",
+		"description": "Sengalpettai",
 		"active": false
 	}
 
