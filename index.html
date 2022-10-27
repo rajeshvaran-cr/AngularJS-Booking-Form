@@ -55,11 +55,11 @@
 						</div>
 						<div class="col-sm-6">
 							<div class="form-group">
-							<label for="endDate">End Date<span class="required"> *</span></label>
-							<p class="input-group">	
-									<input type="text" class="form-control" datepicker-popup="{{format}}" is-open="opened1" min-date="minDate" max-date="" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-model="booking.startDate" class="form-control" name="startDate" id="startDate" ng-required="true" close-text="Close" ng-click="open($event)"/>
-									<span class="input-group-btn">
-									<button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+						    	<label for="endDate">End Date<span class="required"> *</span></label>
+					            <p class="input-group">
+									<input type="text" ng-disabled="!booking.startDate" class="form-control" datepicker-popup="{{format}}" ng-model="booking.endDate" name="endDate" id="endDate" is-open="opened2" min-date="booking.startDate" max-date="" datepicker-options="dateOptions" date-disabled="disabled(date, mode)" ng-required="true" close-text="Close" ng-click="open2($event)"/>
+									<span class="input-group-btn" >
+									<button type="button" ng-disabled="!booking.startDate" class="btn btn-default" ng-click="open2($event)"><i class="glyphicon glyphicon-calendar"></i></button>
 									</span>
 					            </p>
 						    </div>
